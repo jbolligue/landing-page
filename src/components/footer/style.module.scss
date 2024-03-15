@@ -2,7 +2,7 @@
 
 .footer{
     margin: 0 auto;
-    .footer-section{
+    .footer-content-section{
         display: inline-block;
         position: relative;
     }
@@ -77,6 +77,38 @@
         flex: 1;
         padding-left: 100px;
     }
+}
+
+.footer-info-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    background: $white;
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+
+        .footer-copyright{
+            width: 90%;
+
+        }
+        .footer-socials{
+            width: 10%;
+        }
+
+        p{
+            font: 400 14px / 20px $inter;
+            color: $black;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
 }
 
 @media (max-width: 1140px) {

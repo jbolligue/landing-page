@@ -8,7 +8,7 @@ const Footer = () =>{
         <>
         <Container color='bg'>
             <div className={ style.footer }>
-                <section className={ style.footerSection }>
+                <section className={ style.footerContentSection }>
                     <div className={ style.footerContainer }>
                         <div className={ style.footerContent }>
                             <h1 className={ style.contentTitle }>Get a Deck</h1>
@@ -27,6 +27,17 @@ const Footer = () =>{
                 </section>
             </div>
         </Container>
+        
+        <section className={ style.footerInfoSection}>
+            <div className={ style.footerContainer }>
+                <div className={ style.footerCopyright }>
+                    <p>Copyright © {(new Date().getFullYear())} Mobiry International Inc. All rights reserved. </p>
+                </div>
+                <div className={ style.footerSocials }>
+                    <StaticImage alt="image3" src="../../images/linkedin.png" />
+                </div>
+            </div>
+        </section>
         </>
     )
   }
