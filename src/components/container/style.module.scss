@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    &.bg{
+        background: linear-gradient(to right, #ffeee6,#fbc5af);
+        margin: 0 auto;
+        padding: 25px;
+    }
+}

@@ -1,0 +1,114 @@
+@import '../../sass/variables.scss';
+
+.main-content{
+    padding: 150px 0 0 0;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-one{
+    padding-bottom: 100px;
+
+    .section-one-content{
+        flex: 1;
+        
+        .content-title{
+            font: 600 72px / 79px $poppins;
+            margin: 0;
+        }
+        
+        .content-desc{
+            color: $black;
+            font: 400 18px / 30px $inter;
+            padding-right: 240px;
+        }
+    }
+
+    .section-one-image{
+        flex: 1;
+    }
+}
+
+.section-two{
+    padding: 30px 0;
+    .section-two-image{
+        flex: 1;
+    }
+
+    .section-two-content{
+        flex: 1;
+        padding-left: 100px;
+
+        img{
+            
+            padding: 25px 0;
+            width: 48px;
+            height: 48px;
+        }
+
+        .content-title{
+            font: 600 42px / 48px $poppins;
+            margin: 0;
+        }
+        
+        .content-desc{
+            color: $black;
+            font: 400 18px / 30px $inter;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+
+    .section-one{
+
+        .content-container{
+            flex-direction: column;
+        }
+
+        .section-one-content{
+            .content-desc{
+                padding-right: 0;
+            }
+        }
+    }
+    
+    .section-two{
+        padding: 30px 0;
+        .content-container{
+            flex-direction: column-reverse;
+        }
+
+        .section-two-content{
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-one{
+
+        .section-one-content{
+            .content-title{
+                font: 600 60px / 79px "Poppins", sans-serif;
+            }
+        }
+    }
+    
+    .section-two{
+
+        .content-container{
+            flex-direction: column-reverse;
+        }
+
+        .section-two-content{
+            padding-left: 0;
+        }
+    }
+}

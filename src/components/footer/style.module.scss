@@ -1,0 +1,163 @@
+@import '../../sass/variables.scss';
+
+.footer{
+    margin: 0 auto;
+    .footer-section{
+        display: inline-block;
+        position: relative;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-content{
+        flex: 1;
+
+        .content-title{
+            font: 600 72px / 79px $poppins;
+            margin: 0;
+        }
+
+        .content-desc{
+            color: $black;
+            font: 400 18px / 30px $inter;
+
+            span{
+                font: 600 18px / 30px $inter;
+            }
+        }
+
+        .footerForm{
+            form{
+                display: flex;
+
+                input{
+                    border: 2px solid transparent;
+                    border-radius: 12px;
+                    color: #292d33;
+                    font: 400 16px $poppins;
+                    margin-right: 20px;
+                    padding: 14px;
+                    width: 60%;
+                }
+                button{
+                    background: #ff6d2f;
+                    border: 2px solid #ff6d2f;
+                    border-radius: 10px;
+                    color: #fff;
+                    font: 600 16px $inter;
+                    padding: 16px 24px 16px 40px;
+                    position: relative;
+                    text-decoration: none;
+                    transition: all .3s ease-in-out;
+                    width: 30%;
+                    z-index: 9;
+
+                    &:after{
+                        background-image: url('../../images/download.png');
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        content: "";
+                        height: 20px;
+                        left: 20px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 20px 
+                    }
+                }
+            }
+        }
+    }
+    .footer-image{
+        flex: 1;
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .content-title{
+        font: 600 62px / 79px $poppins !important;
+    }
+    .footerForm{
+        form{
+
+            button{
+                width: 35% !important;
+
+                &:after{
+                    left: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .content-title{
+        font: 600 60px / 79px $poppins !important;
+    }
+    .footerForm{
+        form{
+
+            button{
+                width: 35% !important;
+
+                &:after{
+                    left: 10px !important;
+                }
+            }
+        }
+    }
+    .footer-image{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-title{
+        font: 600 65px / 79px $poppins !important;
+    }
+    .footerForm{
+        form{
+            flex-direction: column;
+            gap: 15px;
+            input{
+                width: auto !important;
+            }
+            button{
+                width: 95% !important;
+
+                &:after{
+                    left: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 495px) {
+    .content-title{
+        font: 600 48px / 40px $poppins !important;
+    }
+    .footerForm{
+        form{
+            flex-direction: column;
+            gap: 15px;
+            input{
+                width: auto !important;
+            }
+            button{
+                width: 95% !important;
+
+                &:after{
+                    left: 10px !important;
+                }
+            }
+        }
+    }
+}
